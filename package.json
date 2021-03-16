@@ -1,0 +1,38 @@
+{
+    "name": "honkit-plugin-google-analytics",
+    "description": "Add a google analytics tag to your Honkit documentation.",
+    "main": "index.js",
+    "version": "1.0.0",
+    "engines": {
+        "honkit": ">=1.x.x"
+    },
+    "homepage": "https://github.com/stuyk/honkit-plugin-google-analytics",
+    "keywords": [
+        "seo",
+        "google",
+        "analytics",
+        "honkit"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stuyk/honkit-plugin-google-analytics"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/stuyk/honkit-plugin-google-analytics/issues"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 120,
+        "singleQuote": true
+    },
+    "honkit": {
+        "properties": {
+            "uid": {
+                "type": "string",
+                "required": true,
+                "title": "A google analytics tag that starts with UA-XXX...-X"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{% extends template.self %}
+<!-- -->
+{% block head %}
+<!-- -->
+{% if config.pluginsConfig.analytics.uid %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ config.pluginsConfig.analytics.uid }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', '{{ config.pluginsConfig.analytics.uid }}');
+</script>
+{% endif %} {% endblock %}
